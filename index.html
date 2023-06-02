@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="header">
+        <div class="header-one">
             <h3>Grandes ofertas en comederos</h3>
-            <select id="idioma" name="idioma">
-                <option value="">Español</option>
-                <option value="opcion1">English</option>
-                <option value="opcion2">French</option>
-                <option value="opcion3">Portuguese</option>
-            </select>
-            <select id="moneda" name="moneda">
-                <option value="">$ARG</option>
-                <option value="opcion1">$US</option>
-                <option value="opcion2">€EU</option>
-                <option value="opcion3">$UY</option>
-            </select>
+            <div>
+                <select id="idioma" name="idioma">
+                    <option value="">Español</option>
+                    <option value="opcion1">English</option>
+                    <option value="opcion2">French</option>
+                    <option value="opcion3">Portuguese</option>
+                </select>
+                <select id="moneda" name="moneda">
+                    <option value="">$ARG</option>
+                    <option value="opcion1">$US</option>
+                    <option value="opcion2">€EU</option>
+                    <option value="opcion3">$UY</option>
+                </select>
+            </div>
         </div>
-        <div>
+        <div class="header-two">
             <img src="./images/logo.png" alt="Logo">
             <nav>
                 <ul>
@@ -36,35 +39,40 @@
         </div>
     </header>
     <main>
-        <section id="banner">
-            <img src="./images/banner.png" alt="Banner principal">
-            <h1>¡Es un placer tenerte aquí!</h1>
-            <p>¡Comederos en descuento!</p>
-            <button>COMEDEROS</button>
+        <section class="banner">
+            <div class="cta">
+                <h1>¡Es un placer tenerte aquí!</h1>
+                <p>¡Comederos en descuento!</p>
+                <button>COMEDEROS</button>
+            </div>
         </section>
-        <section id="productos">
-            <img src="images/pawprint.png" alt="Huellita">
-            <h2>Productos Destacados</h2>
-            <ul>
-                <li><a href="#">Comederos</a></li>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Comida</a></li>
-            </ul>
-            <figure>
-                <img src="images/churrasquito.png" alt="Juguete Churrasco">
-                <figcaption>Juguete Churrasquito</figcaption>
-                <span>$150</span>
-            </figure>
-            <figure>
-                <img src="images/comedero.png" alt="Comedero">
-                <figcaption>Comedero para perro</figcaption>
-                <span>$250</span>
-            </figure>
-            <figure>
-                <img src="images/huesito.png" alt="Juguete Huesito">
-                <figcaption>Juguete Huesito</figcaption>
-                <span>$650</span>
-            </figure>
+        <section class="products">
+            <div class="products-txt">
+                <img src="images/pawprint.png" alt="Huellita">
+                <h2>Productos Destacados</h2>
+                <ul>
+                    <li><a href="#">Comederos</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Comida</a></li>
+                </ul>
+            </div>
+            <div>
+                <figure>
+                    <img src="images/churrasquito.png" alt="Juguete Churrasco">
+                    <figcaption>Juguete Churrasquito</figcaption>
+                    <span>$150</span>
+                </figure>
+                <figure>
+                    <img src="images/comedero.png" alt="Comedero">
+                    <figcaption>Comedero para perro</figcaption>
+                    <span>$250</span>
+                </figure>
+                <figure>
+                    <img src="images/huesito.png" alt="Juguete Huesito">
+                    <figcaption>Juguete Huesito</figcaption>
+                    <span>$650</span>
+                </figure>
+            </div>
         </section>
         <section id="formulario">
             <form action="">
