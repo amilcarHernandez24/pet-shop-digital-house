@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -10,18 +11,44 @@
 
 .header-one {
     display: flex;
-    font-size: 12px;
     justify-content: space-between;
+    align-items: center;
     background-color: #000;
     color: #fff;
     height: 20px;
 }
 
+.header-one h3 {
+    margin-left: 90px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.header-one .options {
+    margin-right: 50px;
+}
+
+.options select {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
 .header-two {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #F0A83E;
     height: 62px;
+}
+
+.header-two img {
+    margin-left: 40px;
+}
+
+.header-two nav {
+    margin-right: 40px;
 }
 
 .header-two > nav > ul {
@@ -30,25 +57,66 @@
     list-style: none;
     color: #fff;
     width: 300px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .banner {
+    margin-bottom: 20px;
     display: flex;
     justify-content: end;
     align-items: center;
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 409px;
     width: 100%;
 }
 
 .cta {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 350px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 400;
+}
+
+.cta h1 {
+    background-color: #fff;
+    margin-bottom: 12px;
+    width: 360px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #3C2313;
+}
+
+.cta p {
+    margin-bottom: 12px;
+    width: 191px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3C2313;
+}
+
+.cta button {
+    width: 141px;
+    height: 49px;
+    background: #F0A83E;
+    border-radius: 5px;
+    border: none;
 }
 
 .products {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
 }
 
 .products-menu {
@@ -56,10 +124,21 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
-.products-menu > ul > li {
+.products-menu h2 {
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.products-menu > ul {
+    margin: 20px 0 50px;
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
+    width: 270px;
 }
 
 .products-menu > ul > li > a {
@@ -68,8 +147,47 @@
 }
 
 .products-banner {
+    width: 850px;
     display: flex;
     justify-content: space-around;
+}
+
+.products-banner figcaption {
+    color: #3C2313;
+}
+
+.products-banner span {
+    color: #F0A83E;
+}
+
+.fig-1 {
+    background-image: url(../images/churrasquito.png);
+    width: 265px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fig-2 {
+    background-image: url(../images/comedero.png);
+    width: 265px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fig-3 {
+    background-image: url(../images/huesito.png);
+    width: 265px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Solo para delimitar la zona del form */
@@ -79,6 +197,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 75px;
+}
+
+.form-container h3 {
+    color: #3C2313;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 .formulario {
@@ -88,15 +214,19 @@
 
 .formulario input {
     width: 340px;
-    height: 40px;
+    height: 30px;
     border-radius: 15px;
     background-color: #3C2313;
     border: none;
-    color: #fff;
+    padding: 10px;
     margin-bottom: 10px;
+}
+
+.formulario input::placeholder {
+    color: #fff;
 }
 
 .form-buttons {
     display: flex;
-    margin-right: 10px;
+    justify-content: center;
 }
