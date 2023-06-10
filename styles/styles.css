@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -190,7 +195,7 @@
     align-items: center;
 }
 
-/* Solo para delimitar la zona del form */
+/* form zone */
 
 .form-container {
     display: flex;
@@ -229,4 +234,25 @@
 .form-buttons {
     display: flex;
     justify-content: center;
+}
+
+/* footer zone */
+
+.newsletter {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    background-color: #3C2313;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    background-color: #000;
+    color: #fff;
 }
